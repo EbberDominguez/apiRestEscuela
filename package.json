@@ -1,24 +1,24 @@
 {
   "name": "api",
-  "version": "2.0.0",
-  "description": "Practica 1 de la unidad 3.... API REST",
+  "version": "1.0.0",
+  "description": "practica 1, unidad 3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EbberDominguez/apiRestEscuela.git"
+    "url": "git+https://github.com/Karla-Anahi/WEBII.git"
   },
   "keywords": [
     "api"
   ],
-  "author": "Ebber Dominguez",
+  "author": "Karla Anahi Hernandez Hernandez",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/EbberDominguez/apiRestEscuela/issues"
+    "url": "https://github.com/Karla-Anahi/WEBII/issues"
   },
-  "homepage": "https://github.com/EbberDominguez/apiRestEscuela#readme",
+  "homepage": "https://github.com/Karla-Anahi/WEBII#readme",
   "dependencies": {
     "express": "^4.17.1",
     "mssql": "^7.0.0",

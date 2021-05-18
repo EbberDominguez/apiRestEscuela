@@ -1,13 +1,14 @@
-const mysql=require('mysql');
+const mysql = require('mysql');
 
-const config ={
-    host:'25.4.69.61',
-    user:'root',
-    password:'root',
-    database:'api'
+//set database connection
+const config = {
+    host: '25.4.36.222',
+    user: 'root@localhost',
+  //  password: 'root',
+    database: 'APIDB',
 };
-//Create a Mysql pool
-const pool= mysql.createPool(config);
 
-//Export the pool
-module.exports=pool;
+//crear a mysql pool
+const pool = mysql.createPool(config);
+//export 
+module.exports = pool;
