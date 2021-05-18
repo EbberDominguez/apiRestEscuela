@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "2.0.0",
+  "description": "Practica 1 de la unidad 3.... API REST",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EbberDominguez/apiRestEscuela.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Ebber Dominguez",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/EbberDominguez/apiRestEscuela/issues"
+  },
+  "homepage": "https://github.com/EbberDominguez/apiRestEscuela#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mssql": "^7.0.0",
+    "mysql": "^2.18.1"
+  }
+}
