@@ -97,6 +97,16 @@ const router = app => {
 
         });
     });
+    //Eliminar un rol 
+    app.delete('/roles/:id', (request, response)=> {
+        const id = request.params.id;
+
+        pool.query('DELETE FROM roles WHERE id_rol = ? ' , id, (error,result)=> {
+            if (error)throw error;
+            response.send('Role deleted');
+
+        });
+    });
 };
 
 //exporta el router
