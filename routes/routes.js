@@ -86,6 +86,17 @@ const router = app => {
         response.status(201).send(`Role added with ID: ${result.insertId}`);
         });
     });
+    //actualizar un rol existente 
+    app.put('/roles/:id', (request, response)=> {
+        const id = request.params.id;
+
+        pool.query ('UPDATE roles SET ? WHERE id_rol = ?', [request.body, id],(error, result)=> {
+            if (error) throw error;
+
+            response.send(result);
+
+        });
+    });
 };
 
 //exporta el router
