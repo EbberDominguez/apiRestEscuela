@@ -73,11 +73,19 @@ const router = app => {
   app.get('/roles/:id', (request, response)=> {
     const id = request.params.id;
 
-    pool.query('SELECT * FROM usuarios WHERE id_rol = ?',id,(error,result )=> {
-        if(error) throw error;
-        response.send(result);
+        pool.query('SELECT * FROM usuarios WHERE id_rol = ?',id,(error,result )=> {
+            if(error) throw error;
+            response.send(result);
+        });
     });
-});
+    //agregar un nuevo rol
+    app.post('/roles',(request,response)=>{
+        pool.query('INSERT INTO roles SET ?',request.body,(error,result)=>{
+        if (error) throw error;
+
+        response.status(201).send(`Role added with ID: ${result.insertId}`);
+        });
+    });
 };
 
 //exporta el router
