@@ -1,11 +1,11 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 //set database connection
 const config = {
-    host: '25.4.36.222',
-    user: 'root@localhost',
-  //  password: 'root',
-    database: 'APIDB',
+    host: '25.4.69.61',
+    user: 'root',
+    password: 'root',
+    database: 'api',
 };
 
 //crear a mysql pool
