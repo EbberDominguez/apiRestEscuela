@@ -68,7 +68,16 @@ const router = app => {
             response.send(result);
         });
     });
-  
+  //mostrar rol por id
+
+  app.get('/roles/:id', (request, response)=> {
+    const id = request.params.id;
+
+    pool.query('SELECT * FROM usuarios WHERE id_rol = ?',id,(error,result )=> {
+        if(error) throw error;
+        response.send(result);
+    });
+});
 };
 
 //exporta el router
